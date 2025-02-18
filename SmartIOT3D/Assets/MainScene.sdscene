@@ -124,7 +124,7 @@ Hierarchy:
                         Id: b45735d1-1656-47f7-af43-47ea32bd3bfa
                     31a7abb3c0e0a6a87b4f4fcb28cde33d: !SmartIOT3D.CubeMoverScript,SmartIOT3D
                         Id: 6414c430-72c3-4b83-9ad8-a22f8fea4d2d
-                        CubeCount: 10
+                        CubeCount: 500
                         WaypointPrefab: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
         -   Folder: null
             Entity:
