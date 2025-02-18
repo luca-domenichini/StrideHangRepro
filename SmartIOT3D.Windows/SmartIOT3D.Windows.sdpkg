@@ -1,0 +1,18 @@
+!Package
+SerializedVersion: {Assets: 3.1.0.0}
+Meta:
+    Name: SmartIOT3D.Windows
+    Version: 1.0.0
+    Authors: []
+    Owners: []
+    Dependencies: null
+AssetFolders:
+    -   Path: !dir Assets
+ResourceFolders:
+    - !dir Resources
+OutputGroupDirectories: {}
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets:
+    - d55d43e0-06c1-4811-bd29-79de3dfd818e:Ground

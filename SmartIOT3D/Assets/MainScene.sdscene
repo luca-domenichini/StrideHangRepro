@@ -1,0 +1,724 @@
+!SceneAsset
+Id: 51d30f81-d189-4471-8e99-d72bc5df66ed
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 1e55a641-a6f6-4344-aa4d-04586345499b
+        - ref!! c91969d8-5b32-4e20-96db-fd5383883956
+        - ref!! d906df67-6204-44be-89ef-4d58ac1aa405
+        - ref!! 1f6c5cf0-f58f-4433-844b-0eb273877de2
+        - ref!! c2b0283e-05c9-4bc8-924d-2762465a77b1
+        - ref!! a56d81e5-040b-4299-afdc-c59ffa465c7e
+        - ref!! 6eea8091-36c7-4457-a264-4cc8670e5613
+        - ref!! 97476630-bf7f-4e6a-a138-157ad56127fe
+        - ref!! 43dc3dcb-a167-4a2f-b78e-091aff8114cb
+        - ref!! bc5026ba-117d-4829-bbcc-f231852df615
+        - ref!! 6afdad3c-7267-464b-9135-e58b168a0e4e
+        - ref!! 74a17ff3-7425-4355-a1ee-28e69c2d6f8c
+        - ref!! eb9b507e-01c8-469e-8f34-d0510f49fc60
+    Parts:
+        -   Folder: null
+            Entity:
+                Id: 052553c9-1c4b-41ee-b694-73df7d5f1696
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: 17380f97-c105-4908-ac74-d96fc5110eca
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! b8816b8f-d661-4250-ac69-b96f32c87234
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: 0fbd4acf-6c20-4234-9b04-387d60dd011e
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: a1335106-25d1-4636-84c2-6c280a11d8d9
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: 5c480f8a-82ff-4f8a-948f-9fc6e8c31ef6
+                        SphereId: 0
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: dbd49dcc-9f29-49be-822d-f08004431be3
+                InstanceId: 8ad63c59-478b-4b03-9baa-bff90d750d71
+        -   Entity:
+                Id: 1e55a641-a6f6-4344-aa4d-04586345499b
+                Name: Camera
+                Components:
+                    f9148df86fbdd702334163f3af0c57ee: !TransformComponent
+                        Id: 0e3dfd33-d3a3-4ee2-bd0a-05e93a974fd6
+                        Position: {X: 2.8635077, Y: 9.143195, Z: 16.414898}
+                        Rotation: {X: -0.30405894, Y: 0.0, Z: 0.0, W: 0.9526532}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5093a7e0b7a851568caf4d6b45824d46: !CameraComponent
+                        Id: 96e697af-bf0e-468f-bcb1-ee3997132d85
+                        Name: null
+                        Projection: Perspective
+                        Slot: 0d6db7ca-5f79-40a9-af79-2ac4fc990776
+                    1fdaf15ec6db442051dd4520a75ac6ea: !SmartIOT.Stride.Library.CameraController,SmartIOT.Stride.Library
+                        Id: 8f83c674-c13d-4cc7-be3e-e1e50528c3e0
+                        Gamepad: false
+                        RotationMouseButton: Right
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseMovementSpeed: 0.3
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+                        LookAtTime: 1.0
+                        MinimumY: 0.1
+        -   Entity:
+                Id: 1f6c5cf0-f58f-4433-844b-0eb273877de2
+                Name: Ground
+                Components:
+                    3dab1d4cfa5461bc3599d475fd9cdedc: !TransformComponent
+                        Id: 655bfeac-189f-41c1-8b3b-77c21bce2041
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 20.0, Y: 1.0, Z: 20.0}
+                        Children: {}
+                    2ee2c90906dbb29379e77f4a637e15e7: !ModelComponent
+                        Id: 4562cb46-d2f0-4b9c-a758-4556fb673362
+                        Model: d55d43e0-06c1-4811-bd29-79de3dfd818e:Ground
+                        Materials: {}
+                    32495540f9de9b6a60b51c00ba9c1422: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: f2aed56e-f538-4f69-9025-77b6de8ddaed
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                f256f8f3368c27e04aeff5488718ed1d: !Stride.BepuPhysics.Definitions.Colliders.BoxCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Size: {X: 200.0, Y: 0.0, Z: 200.0}
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    15e81b537776458d1154ebce1decc011: !SmartIOT.Stride.Library.RoutingTableBootstrapper,SmartIOT.Stride.Library
+                        Id: ed0dd306-3838-43af-9d9f-e10911aa6b7a
+                    3f441e0880b0685a9d9f47a64e0801ea: !SmartIOT.Stride.Library.CubeEntityFactory,SmartIOT.Stride.Library
+                        Id: a6a12acf-41fe-4439-8a03-70b178e284ca
+                        Prefab: acd192cc-96ac-490c-a5ee-e28d40e21734:CubePrefab
+                    74e40001633058598a807ef6d2833f20: !SmartIOT.Stride.Library.CubeComponentMoverManager,SmartIOT.Stride.Library
+                        Id: b45735d1-1656-47f7-af43-47ea32bd3bfa
+                    31a7abb3c0e0a6a87b4f4fcb28cde33d: !SmartIOT3D.CubeMoverScript,SmartIOT3D
+                        Id: 6414c430-72c3-4b83-9ad8-a22f8fea4d2d
+                        CubeCount: 10
+                        WaypointPrefab: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+        -   Folder: null
+            Entity:
+                Id: 2d270d18-2a11-432d-ba4d-48c140fb6af5
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: 35e61811-e9f5-4269-8bc4-19b9e2278767
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: 64f65780-8781-4d04-a75f-8dddee218581
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                InstanceId: 4a559332-cf27-46f4-968b-272d0009faef
+        -   Folder: null
+            Entity:
+                Id: 3f17e614-c493-4441-9238-dba84fe8c704
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: 69c2cacd-7ab6-4313-b921-98650e0ddf19
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: 02ebd8eb-219a-475a-ac29-01fc85ed8571
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                InstanceId: fa2a95ca-27bf-49e6-9cd8-bbe2461f1dc8
+        -   Entity:
+                Id: 43dc3dcb-a167-4a2f-b78e-091aff8114cb
+                Name: WaypointPrefab
+                Components:
+                    02dcb5b20e36ce35bb621cfa85c54b0a: !TransformComponent
+                        Id: 23aae852-0e38-4cdb-bcb7-07cc51f53d15
+                        Position: {X: 5.9999995, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            afdc760dc08bbe535a485b85dd0394bf: ref!! 17380f97-c105-4908-ac74-d96fc5110eca
+        -   Entity:
+                Id: 4b60020b-d217-4350-b32b-de355d8b2d2d
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: 3c40d181-90f3-4cb6-860e-8a0153f2d198
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: dcb38994-9e97-4ad7-a813-a5a0fab6b724
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                InstanceId: 3ce635d5-7eff-4c5e-bf87-8afbbde9e26c
+        -   Folder: null
+            Entity:
+                Id: 4dc7409f-e195-47eb-bf53-890a79d8b720
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: b59043c5-f940-4ed6-a29a-788b3889e278
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! 35e61811-e9f5-4269-8bc4-19b9e2278767
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: 6ce2f4c7-8251-45ee-ab6a-0441b5a44d5b
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: dddce546-c41a-4a14-a404-544a17013169
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: f2de076d-6321-47b5-8b29-3e023dd742f7
+                        SphereId: 0
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: dbd49dcc-9f29-49be-822d-f08004431be3
+                InstanceId: 4a559332-cf27-46f4-968b-272d0009faef
+        -   Folder: null
+            Entity:
+                Id: 5db29580-7be8-40c9-8de4-db54c815e526
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: fb7096d2-822b-4649-9089-ea078776f443
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: 723435f2-8cf4-4641-9306-faa644d0660c
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                InstanceId: 039b5ff3-47b6-45b0-9274-b99b133287c3
+        -   Folder: null
+            Entity:
+                Id: 5eac8a6a-31eb-4d39-ae26-c79108ee4e61
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: f558378b-32d1-45fb-a76c-6a4445dc652f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! fb7096d2-822b-4649-9089-ea078776f443
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: 71d5a072-4718-44cc-9ba4-e22e23ef40e0
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: b9247818-a80b-432a-a79c-ee84b878aae3
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: 8f82fe46-0b8c-4730-b539-87887c818e96
+                        SphereId: 0
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: dbd49dcc-9f29-49be-822d-f08004431be3
+                InstanceId: 039b5ff3-47b6-45b0-9274-b99b133287c3
+        -   Folder: null
+            Entity:
+                Id: 66e03da3-bea9-43d3-8769-78edd8759653
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: a2e02694-6392-4b3b-908d-138399f3c81c
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: 2fe159b4-300d-4ba2-9a58-27a37744c262
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                InstanceId: 1d6f428c-eb15-4da4-af36-905383334f9b
+        -   Entity:
+                Id: 6afdad3c-7267-464b-9135-e58b168a0e4e
+                Name: WaypointPrefab
+                Components:
+                    02dcb5b20e36ce35bb621cfa85c54b0a: !TransformComponent
+                        Id: 242cea3c-907a-4b4a-a8ba-348e8b520da3
+                        Position: {X: 5.9999995, Y: 0.5, Z: 5.9999995}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            afdc760dc08bbe535a485b85dd0394bf: ref!! afa7a59e-1b35-4fc3-b255-be1efb1b3389
+        -   Entity:
+                Id: 6eea8091-36c7-4457-a264-4cc8670e5613
+                Name: WaypointPrefab
+                Components:
+                    02dcb5b20e36ce35bb621cfa85c54b0a: !TransformComponent
+                        Id: 640d77e0-f136-4301-89ee-667ad4f277b9
+                        Position: {X: 3.0, Y: 0.5, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            afdc760dc08bbe535a485b85dd0394bf: ref!! b9b32ff3-c690-4dfd-a91f-367027eb00a4
+        -   Folder: null
+            Entity:
+                Id: 707a0675-00eb-4ec2-8d03-5e5051c09a40
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: 6afb4ca8-836d-42f3-8c11-a5284464404d
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: f1f66636-d89d-47c3-9172-cc7d003d2533
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                InstanceId: 9cd64b6f-8d5c-4db2-9a96-f0f9a60c9080
+        -   Entity:
+                Id: 74a17ff3-7425-4355-a1ee-28e69c2d6f8c
+                Name: WaypointPrefab
+                Components:
+                    02dcb5b20e36ce35bb621cfa85c54b0a: !TransformComponent
+                        Id: 0968f0fd-fbb9-4736-aee1-454e4771908e
+                        Position: {X: 2.9999998, Y: 0.5, Z: 5.9999995}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            afdc760dc08bbe535a485b85dd0394bf: ref!! 1055ffc0-0ac6-4b37-88a4-d9429326927e
+        -   Folder: null
+            Entity:
+                Id: 8210ea75-5821-4c45-a5e4-aa27a175bb68
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: 1055ffc0-0ac6-4b37-88a4-d9429326927e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! a2e02694-6392-4b3b-908d-138399f3c81c
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: ecfc9a6f-4124-4c03-ac09-ebce92f3fdff
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: e90dcd29-ab18-4f17-b7bd-0d9aea8c4d03
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: f774835d-d550-487f-bc51-a4cc7e4d48c9
+                        SphereId: 0
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: dbd49dcc-9f29-49be-822d-f08004431be3
+                InstanceId: 1d6f428c-eb15-4da4-af36-905383334f9b
+        -   Entity:
+                Id: 97476630-bf7f-4e6a-a138-157ad56127fe
+                Name: WaypointPrefab
+                Components:
+                    02dcb5b20e36ce35bb621cfa85c54b0a: !TransformComponent
+                        Id: ad7a44ed-ea06-4b8b-bfe1-83228c68b8d3
+                        Position: {X: 0.0, Y: 0.5, Z: 3.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            afdc760dc08bbe535a485b85dd0394bf: ref!! 83b92665-c4df-491b-bffd-d7d2b35384fd
+        -   Entity:
+                Id: a1211433-d433-426d-ae4f-7fd3013b2922
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: 51f0078e-6c87-4614-97a6-d1a27ada22a1
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! 3c40d181-90f3-4cb6-860e-8a0153f2d198
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: bac7de24-3bd8-4760-b29c-e842f678a27a
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: 37e325f8-2b45-4888-932d-39cff68613b5
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: 1fe1fb08-186e-47c1-98a1-9fb28d0aea04
+                        SphereId: 0
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: dbd49dcc-9f29-49be-822d-f08004431be3
+                InstanceId: 3ce635d5-7eff-4c5e-bf87-8afbbde9e26c
+        -   Entity:
+                Id: a56d81e5-040b-4299-afdc-c59ffa465c7e
+                Name: WaypointPrefab
+                Components:
+                    02dcb5b20e36ce35bb621cfa85c54b0a: !TransformComponent
+                        Id: dfaed107-19dc-4a3c-b80f-da199ab22626
+                        Position: {X: 3.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            afdc760dc08bbe535a485b85dd0394bf: ref!! b59043c5-f940-4ed6-a29a-788b3889e278
+        -   Entity:
+                Id: bc5026ba-117d-4829-bbcc-f231852df615
+                Name: WaypointPrefab
+                Components:
+                    02dcb5b20e36ce35bb621cfa85c54b0a: !TransformComponent
+                        Id: aca18592-cea2-43d1-80d9-713d4a693c7a
+                        Position: {X: 5.9999995, Y: 0.5, Z: 2.9999998}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            afdc760dc08bbe535a485b85dd0394bf: ref!! 54d02021-54be-4c71-a8b8-0cd06969cd52
+        -   Entity:
+                Id: c2b0283e-05c9-4bc8-924d-2762465a77b1
+                Name: WaypointPrefab
+                Components:
+                    02dcb5b20e36ce35bb621cfa85c54b0a: !TransformComponent
+                        Id: 0a34909f-e4fa-4d12-9a48-bd0c08c52ad4
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            afdc760dc08bbe535a485b85dd0394bf: ref!! 51f0078e-6c87-4614-97a6-d1a27ada22a1
+        -   Entity:
+                Id: c91969d8-5b32-4e20-96db-fd5383883956
+                Name: Directional light
+                Components:
+                    533fc2da3385d03b1edb86b2adc534da: !TransformComponent
+                        Id: f4228edd-0621-4ab3-949f-4a0d2d6a13b6
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.25881904, W: -4.222196E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    86a05c3183001c335fb0a9e0cdd95bf7: !LightComponent
+                        Id: 41b70c78-7ce3-4b8e-96f0-243210351eb3
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0
+        -   Folder: null
+            Entity:
+                Id: cad1e090-b8e3-4b1b-abf6-2026d9afe35c
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: 83b92665-c4df-491b-bffd-d7d2b35384fd
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! 69c2cacd-7ab6-4313-b921-98650e0ddf19
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: 0f101795-b678-4ee0-9fe2-aa0ed372d4ba
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: 40755cd5-1dd9-455e-a138-1ecb3230e074
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: f3067a18-ac60-49df-b08d-87c32097ade3
+                        SphereId: 0
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: dbd49dcc-9f29-49be-822d-f08004431be3
+                InstanceId: fa2a95ca-27bf-49e6-9cd8-bbe2461f1dc8
+        -   Entity:
+                Id: d906df67-6204-44be-89ef-4d58ac1aa405
+                Name: Skybox
+                Components:
+                    4fa67ee0fa5f42e4bea33658aa20f4c1: !TransformComponent
+                        Id: 3bfbc9ef-a909-45f1-9e32-93b691c86ba6
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b5533482bee721ebe5d15e2f5e216fa4: !BackgroundComponent
+                        Id: 59430170-0577-4a57-b651-41c15761f462
+                        Texture: 4a5f61a9-65a3-4050-b2fe-66990a1921cb:Skybox texture
+                    e6a23bebbf17a11680ce516ca577ed67: !LightComponent
+                        Id: 9f8a2ee4-de4d-4cf0-8d08-0086f66b2c6d
+                        Type: !LightSkybox
+                            Skybox: f7c0cec3-e4da-484d-b3ff-113c8a400a02:Skybox
+        -   Folder: null
+            Entity:
+                Id: dc430f18-7016-4037-8f94-0f50987b8b8e
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: e8dc2025-3dae-4f96-967d-a11d10cddacb
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: 63e3fa90-44e2-482c-bf0e-9083ccd591cf
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                InstanceId: 88fef2d6-96b6-490f-8428-5aa80182cb89
+        -   Folder: null
+            Entity:
+                Id: e7b4d9d0-d29c-4c88-b35a-5e59891a3212
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: afa7a59e-1b35-4fc3-b255-be1efb1b3389
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! e8dc2025-3dae-4f96-967d-a11d10cddacb
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: 8870ec44-ab6a-4495-a69b-b003c1baaddf
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: 22827117-34f6-4f30-aa9d-a11493e0fb10
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: bd1ccda5-af88-410f-b03f-a2a81d8e19b4
+                        SphereId: 0
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: dbd49dcc-9f29-49be-822d-f08004431be3
+                InstanceId: 88fef2d6-96b6-490f-8428-5aa80182cb89
+        -   Entity:
+                Id: eb9b507e-01c8-469e-8f34-d0510f49fc60
+                Name: WaypointPrefab
+                Components:
+                    02dcb5b20e36ce35bb621cfa85c54b0a: !TransformComponent
+                        Id: 179582c9-cc82-4158-902c-73d15c4dba19
+                        Position: {X: 0.0, Y: 0.5, Z: 5.9999995}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            afdc760dc08bbe535a485b85dd0394bf: ref!! f558378b-32d1-45fb-a76c-6a4445dc652f
+        -   Folder: null
+            Entity:
+                Id: f3a6d706-9e7f-4e19-82d0-20c7fe81350c
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: 54d02021-54be-4c71-a8b8-0cd06969cd52
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! 6afb4ca8-836d-42f3-8c11-a5284464404d
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: e64ae243-ef8a-44d3-a6ab-27f7f716abfe
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: 23ccc8a4-b204-4773-a941-79e2bff68f09
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: 74fd1305-4c3a-43f6-8fff-8742c4c29568
+                        SphereId: 0
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: dbd49dcc-9f29-49be-822d-f08004431be3
+                InstanceId: 9cd64b6f-8d5c-4db2-9a96-f0f9a60c9080
+        -   Folder: null
+            Entity:
+                Id: fce9a706-7999-44ab-a610-66eaf585edf5
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: b9b32ff3-c690-4dfd-a91f-367027eb00a4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! e59529e0-2a83-4cae-8208-3368f1897732
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: eab080df-7f26-4226-99e7-9f1de0ce6201
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: a16b4b00-25ed-4c63-89b6-ab8a835adeee
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: 5edf7f5c-6516-4275-b22c-0bc72df5cbdc
+                        SphereId: 0
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: dbd49dcc-9f29-49be-822d-f08004431be3
+                InstanceId: 0b23dee9-2245-45ba-94ee-4924cf82f802
+        -   Folder: null
+            Entity:
+                Id: fdd09831-c659-4b6e-959f-cb1f831b876d
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: e59529e0-2a83-4cae-8208-3368f1897732
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: 1069883a-248e-4a0d-b5aa-d30b9efe83bc
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                InstanceId: 0b23dee9-2245-45ba-94ee-4924cf82f802
+        -   Folder: null
+            Entity:
+                Id: ffc48caf-e871-4e7a-92ea-71d4fae82f42
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: b8816b8f-d661-4250-ac69-b96f32c87234
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: 735ed5e7-76b6-4cbc-ab08-968de1b48d41
+            Base:
+                BasePartAsset: 111505b7-02e7-41c4-868d-84b62f8b4ed7:WaypointPrefab
+                BasePartId: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                InstanceId: 8ad63c59-478b-4b03-9baa-bff90d750d71

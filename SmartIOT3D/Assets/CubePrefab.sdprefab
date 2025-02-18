@@ -1,0 +1,40 @@
+!PrefabAsset
+Id: acd192cc-96ac-490c-a5ee-e28d40e21734
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! c7f26fb9-1c67-4257-925d-ba51c7633ae4
+    Parts:
+        -   Entity:
+                Id: c7f26fb9-1c67-4257-925d-ba51c7633ae4
+                Name: Odette
+                Components:
+                    c1474bc328de2cfd84bba3ac14ce2a66: !TransformComponent
+                        Id: a0c95f54-98db-4e18-93eb-17d09abceaa7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    52e350f4c6853f47b507e4fe473c15d1: !ModelComponent
+                        Id: a3d1e10c-ea20-4e81-a434-f77abaee6348
+                        Model: 399e37d9-2577-494a-920f-c30b8b893926:Cube
+                        Materials: {}
+                    72d75909c6dd29dcf30119af53e74fdb: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: f55d1999-c70c-4e8e-a29b-24b012dbd097
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                db367588d499cf401fe46bcf00d48dd8: !Stride.BepuPhysics.Definitions.Colliders.BoxCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    21cf437ead7b055ec12e682c633992d0: !SmartIOT.Stride.Library.CubeComponent,SmartIOT.Stride.Library
+                        Id: 3a1ae4d1-2794-4ad1-aa53-8ae02fb2e1ac
+                        CubeId: 0

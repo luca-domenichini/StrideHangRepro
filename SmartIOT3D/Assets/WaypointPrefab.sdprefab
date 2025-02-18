@@ -1,0 +1,53 @@
+!PrefabAsset
+Id: 111505b7-02e7-41c4-868d-84b62f8b4ed7
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! dbd49dcc-9f29-49be-822d-f08004431be3
+    Parts:
+        -   Entity:
+                Id: 62b9dcd0-0e9a-406d-99f6-29b9a6f8c1a6
+                Name: Waypoint
+                Components:
+                    8631e0cb52abf0ba94b2749be08e87a6: !TransformComponent
+                        Id: e57eecf4-3206-4f47-bdf8-866f43b547a2
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a48429c7e04b0807896e39670a283583: !SmartIOT.Stride.Library.WaypointComponent,SmartIOT.Stride.Library
+                        Id: 54985d7e-95eb-425d-8d65-6becf321c51b
+        -   Entity:
+                Id: dbd49dcc-9f29-49be-822d-f08004431be3
+                Name: Model
+                Components:
+                    617834803ef7183750fc874219c863f4: !TransformComponent
+                        Id: 08517383-18f1-47ae-8396-c47c1880cc20
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1e3b765f7dccafe1d41775488aaa8d95: ref!! e57eecf4-3206-4f47-bdf8-866f43b547a2
+                    e9c8c1d89660d468cef8df1b6b59040c: !ModelComponent
+                        Id: 63fc5b2a-faec-445b-8430-b85374b66f66
+                        Model: 11f98fde-fd48-4ea7-88c2-e60599118154:GeoSphere
+                        Materials: {}
+                    2a8f9b8a547e080297f7e296ea1dbf77: !Stride.BepuPhysics.StaticComponent,Stride.BepuPhysics
+                        Id: 96669f42-a439-4341-a723-e3c79d4b743e
+                        Collider: !Stride.BepuPhysics.Definitions.Colliders.CompoundCollider,Stride.BepuPhysics
+                            Colliders:
+                                0d94b53857dd4a8c238f3c584d653df3: !Stride.BepuPhysics.Definitions.Colliders.SphereCollider,Stride.BepuPhysics
+                                    Mass: 1.0
+                                    PositionLocal: {X: 0.0, Y: 0.0, Z: 0.0}
+                                    RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                    Radius: 0.55
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        CollisionGroup: {}
+                        ContactEventHandler: null
+                    d00f0559ac3a65f74d5dbf7426d97ce6: !SmartIOT.Stride.Library.SphereComponent,SmartIOT.Stride.Library
+                        Id: 7fe9b5df-59ca-4e4b-bff3-defd898cb98c
+                        SphereId: 0
